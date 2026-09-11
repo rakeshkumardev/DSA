@@ -1,0 +1,26 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class Countdigits {
+   public Countdigits() {
+   }
+
+   public static void main(String[] var0) {
+      System.out.println(optimizeCountDigits(280));
+   }
+
+   static int countDigits(int var0) {
+      if (var0 == 0) {
+         return 1;
+      } else {
+         int var1;
+         for(var1 = 0; var0 > 0; ++var1) {
+            var0 /= 10;
+         }
+
+         return var1;
+      }
+   }
+
+   static int optimizeCountDigits(int var0) {
+      return var0 == 0 ? 1 : (int)Math.floor(Math.log10((double)var0)) + 1;
+   }
+}
