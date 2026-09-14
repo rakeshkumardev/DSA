@@ -3,6 +3,7 @@ public class CheckPrime {
         // CheckPrime.checkPrime(3);
         // System.out.println(CheckPrime.checkPrimeOpt(79));
         System.out.println(CheckPrime.checkPrimeOpt2(79));
+
     }
 
     // ==============================================================================
@@ -48,8 +49,10 @@ public class CheckPrime {
     // ==============================================================================
     // 3. Optimal Approach 2: Early Exit up to sqrt(n) (Most Efficient)
     // Time Complexity:
-    //   - Worst Case: O(sqrt(n))
-    //   - Best Case:  O(1)
+    // - Worst Case: O(sqrt(n)) -> When n is prime, no factor divides n, so loop
+    // runs completely until i > sqrt(n).
+    // - Best Case: O(1) -> When n is an even number > 2 (e.g., 4, 6, 8...),
+    // it exits on the first check (i = 2).
     // Space Complexity: O(1) (Constant Auxiliary Space)
     static boolean checkPrimeOpt2(int n) {
         for (int i = 2; i * i <= n; i++) {
