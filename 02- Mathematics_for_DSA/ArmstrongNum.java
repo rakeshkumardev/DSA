@@ -3,7 +3,10 @@ public class ArmstrongNum {
         System.out.println(ArmstrongNum.armstrongNum(1634));
     }
 
-    // Brute-Force Method :
+    // ==============================================================================
+    // 1. Brute-Force Method
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static boolean armstrongNum(int n) {
         if (n == 0)
             return true;

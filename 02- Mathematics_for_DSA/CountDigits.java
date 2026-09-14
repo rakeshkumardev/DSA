@@ -1,4 +1,3 @@
-
 public class CountDigits {
     public static void main(String[] args) {
         // System.out.println(Countdigits.countDigits(28));
@@ -6,7 +5,10 @@ public class CountDigits {
 
     }
 
-    // Brute-Force Method
+    // ==============================================================================
+    // 1. Brute-Force Method
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int countDigits(int n) {
         if (n == 0)
             return 1;
@@ -20,7 +22,10 @@ public class CountDigits {
 
     }
 
-    // Optimized one with the formula
+    // ==============================================================================
+    // 2. Optimized Approach (Formula)
+    // Time Complexity: O(1)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int optimizeCountDigits(int n) {
         if (n == 0)
             return 1;

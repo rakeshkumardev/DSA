@@ -1,8 +1,9 @@
-
 public class Patterns {
 
-    // ------------------------------------------------------------------------------
-    // pattern 1 (solid square pattern)
+    // ==============================================================================
+    // Pattern 1 (solid square pattern)
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern1(4):
     // * * * *
     // * * * *
@@ -18,8 +19,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
-    // pattern 2 ( right angled triangle pattern)
+    // ==============================================================================
+    // Pattern 2 (right angled triangle pattern)
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern2(5):
     // *
     // * *
@@ -35,7 +38,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 3
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern3(4):
     // 1
     // 1 2
@@ -51,8 +57,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
-    // little bit new trick applied of j variable
+    // ==============================================================================
+    // Pattern 4 (little bit new trick applied of j variable)
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern4(4):
     // 1
     // 2 2
@@ -68,8 +76,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
     // Pattern 5 (right angled triangle pattern with numbers)
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern5(5):
     // 1 2 3 4 5
     // 6 7 8 9
@@ -88,7 +98,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 6
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern6(4):
     // 0 1 2 3
     // 0 1 2 3
@@ -105,7 +118,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 7
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern7(4):
     // A B C D
     // A B C D
@@ -122,7 +138,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 8
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern8(3):
     // 1 2 3
     // 4 5 6
@@ -138,7 +157,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 9
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern9(3):
     // A B C
     // D E F
@@ -154,7 +176,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 10
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern10(4):
     // *
     // * *
@@ -169,7 +194,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 11
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern11(4):
     // 1
     // 2 2
@@ -184,7 +212,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 12
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern12(4):
     // A
     // B B
@@ -202,7 +233,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 13
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern13(4):
     // 1
     // 1 2
@@ -217,7 +251,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 14
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern14(4):
     // 1
     // 2 1
@@ -232,7 +269,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 15
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern15(4):
     // 1
     // 2 3
@@ -249,7 +289,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 16
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern16(4):
     // A
     // B C
@@ -266,7 +309,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 17
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern17(5):
     // 1
     // 1 2
@@ -282,7 +328,10 @@ public class Patterns {
 
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 18
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern18(4):
     // 1
     // 2 2
@@ -298,7 +347,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 19
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern19(5):
     // * * * * *
     // * * * *
@@ -314,7 +366,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 20
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern20(5):
     // 1 2 3 4 5
     // 1 2 3 4
@@ -331,7 +386,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 21
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern21(4):
     // A B C D
     // A B C
@@ -348,7 +406,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 22
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern22(4):
     // 1 2 3 4
     // 5 6 7
@@ -365,7 +426,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 23
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern23(5):
     // 1 1 1 1 1
     // 2 2 2 2
@@ -382,7 +446,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 24
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern24(4):
     // *
     // ***
@@ -403,7 +470,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 25
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern25(4):
     // *******
     // *****
@@ -425,7 +495,10 @@ public class Patterns {
         }
     }
 
-    // ------------------------------------------------------------------------------
+    // ==============================================================================
+    // Pattern 26
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     // Output for pattern26(3):
     // 0 1 2 3
     // 0 1 2 3
@@ -440,6 +513,10 @@ public class Patterns {
         }
     }
 
+    // ==============================================================================
+    // Pattern 27
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     public static void pattern27(int n) {
         for (int i = 0; i < n; i++) {
             char ch = (char) ('A' + i);
@@ -452,6 +529,10 @@ public class Patterns {
         }
     }
 
+    // ==============================================================================
+    // Pattern 28
+    // Time Complexity: O(n)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     public static void pattern28(int n) {
         for (int i = 0; i < n; i++) {
 

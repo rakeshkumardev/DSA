@@ -3,7 +3,10 @@ public class PalindromeCheck {
         System.out.println(PalindromeCheck.palindromeCheck(1221));
     }
 
-    // Brute-Force Method
+    // ==============================================================================
+    // 1. Brute-Force Method
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static boolean palindromeCheck(int n) {
         if (n < 0)
             return false;

@@ -1,8 +1,14 @@
 public class CheckPrime {
     public static void main(String[] args) {
-        CheckPrime.checkPrime(3);
+        // CheckPrime.checkPrime(3);
+        // System.out.println(CheckPrime.checkPrimeOpt(79));
+        System.out.println(CheckPrime.checkPrimeOpt2(79));
     }
-    //Brute-Force Method/approach
+
+    // ==============================================================================
+    // 1. Brute-Force Approach
+    // Time Complexity: O(n)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static boolean checkPrime(int n) {
         // if (n == 0 || n == 1)
         // return false;
@@ -18,6 +24,40 @@ public class CheckPrime {
                           // na of a prime number so that's the whole thing
     }
 
-    static 
+    // ==============================================================================
+    // 2. Optimal Approach 1: Count Factors up to sqrt(n)
+    // Time Complexity: O(sqrt(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
+    static boolean checkPrimeOpt(int n) {
+        int count = 0;
+        for (int i = 1; i * i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+                if (n / i != i) {
+                    count++;
+                }
+            }
+        }
+        if (count == 2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // ==============================================================================
+    // 3. Optimal Approach 2: Early Exit up to sqrt(n) (Most Efficient)
+    // Time Complexity:
+    //   - Worst Case: O(sqrt(n))
+    //   - Best Case:  O(1)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
+    static boolean checkPrimeOpt2(int n) {
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 }

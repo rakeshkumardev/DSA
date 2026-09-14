@@ -5,7 +5,10 @@ public class PrintAllDivisors {
         PrintAllDivisors.printAllDivisorsOpt2(100);
     }
 
-    // Brute-Force Approach
+    // ==============================================================================
+    // 1. Brute-Force Approach
+    // Time Complexity: O(n)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static void printAllDivisors(int n) {
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
@@ -14,7 +17,10 @@ public class PrintAllDivisors {
         }
     }
 
-    // Optimized Approach
+    // ==============================================================================
+    // 2. Optimized Approach (Using Math.sqrt)
+    // Time Complexity: O(sqrt(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static void printAllDivisorsOpt(int n) {
         for (int i = 1; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
@@ -26,7 +32,10 @@ public class PrintAllDivisors {
         }
     }
 
-    // Optimized Approach ( Math.sqrt == i*i <= n)
+    // ==============================================================================
+    // 3. Optimized Approach (Using i * i <= n)
+    // Time Complexity: O(sqrt(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static void printAllDivisorsOpt2(int n) {
         for (int i = 1; i * i <= n; i++) {
             if (n % i == 0) {
