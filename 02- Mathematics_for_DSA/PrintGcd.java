@@ -21,8 +21,8 @@ public class PrintGcd {
     // ==============================================================================
     // 2. Brute-Force Approach 2 (Backward)
     // Time Complexity:
-    //   - Worst Case: O(min(a, b))
-    //   - Best Case:  O(1)
+    // - Worst Case: O(min(a, b))
+    // - Best Case: O(1)
     // Space Complexity: O(1) (Constant Auxiliary Space)
     static int printGcd2(int a, int b) {
         int gcd = 1;
@@ -55,7 +55,8 @@ public class PrintGcd {
     }
 
     // ==============================================================================
-    // 4. Optimal Approach 2 : Recursive Euclidean Algorithm
+    // 4. Optimal Approach 2 : Recursive Euclidean Algorithm ( this method you gonna
+    // learn in Recursion Chapter so go and refer the Recursion)
     // Time Complexity: O(log(min(a, b)))
     // Space Complexity: O(log(min(a, b))) (Recursive Call Stack)
     static int printGcdRecOpt2(int a, int b) {
