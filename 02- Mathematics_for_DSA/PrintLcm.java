@@ -4,7 +4,10 @@ public class PrintLcm {
         System.out.println(PrintLcm.PrintLcmOpt(4, 6));
     }
 
-    // Brute-Force Method
+    // ==============================================================================
+    // 1. Brute-Force Method
+    // Time Complexity: O(a * b)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int printLcm(int a, int b) {
         // Why start from Math.max(a, b)?
         // Can the LCM of 4 and 6 be 1, 2, 3, 4,or 5?
@@ -21,8 +24,10 @@ public class PrintLcm {
         }
     }
 
-    // ===========================
-    // Optimized Approach - using GCD LCM Formula ( a x b = GCD (a,b) x LCM(a,b))
+    // ==============================================================================
+    // Helper Method: Iterative Euclidean Algorithm for GCD
+    // Time Complexity: O(log(min(a, b)))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int gcdprint(int a, int b) {
         while (a > 0 && b > 0) {
             if (a > b) {
@@ -38,6 +43,10 @@ public class PrintLcm {
         }
     }
 
+    // ==============================================================================
+    // 2. Optimized Approach (Using GCD-LCM Formula: a * b = GCD(a, b) * LCM(a, b))
+    // Time Complexity: O(log(min(a, b)))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int PrintLcmOpt(int a, int b) {
         int gcd = gcdprint(a, b);
         return (a * b) / gcd; // either (a / gcd) * b;
