@@ -3,4 +3,8 @@ public class PrintNTo1 {
 
     }
 
+    static void printNTo1(int n) {
+
+    }
+
 }
