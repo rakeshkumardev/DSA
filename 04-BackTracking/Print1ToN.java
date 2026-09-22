@@ -3,7 +3,10 @@ public class Print1ToN {
         Print1ToN.print1ToN(9);
     }
 
-    // the basic code one
+    // ==============================================================================
+    // Print 1 to N using Backtracking
+    // Time Complexity: O(n)
+    // Space Complexity: O(n) (Recursive Call Stack)
     static void print1ToN(int n) {
         if (n == 0) {
             return;

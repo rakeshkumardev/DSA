@@ -4,7 +4,10 @@ public class SumOfDigits {
         System.out.println(SumOfDigits.sumOfDigitIter(1342));
     }
 
-    // Print Sum of Digits of Number N by Using Recursion
+    // ==============================================================================
+    // 1. Sum of Digits using Recursion
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(log10(n)) (Recursive Call Stack)
     static int sumOfDigitRec(int n) {
         if (n == 0) {
             return 0;
@@ -12,7 +15,10 @@ public class SumOfDigits {
         return n % 10 + sumOfDigitRec(n / 10);
     }
 
-    // Print Sum Of Digits of Number N by iterative method
+    // ==============================================================================
+    // 2. Sum Of Digits using Iterative Method
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int sumOfDigitIter(int n) {
         if (n == 0) {
             return 0;
@@ -24,7 +30,6 @@ public class SumOfDigits {
             n = n / 10;
         }
         return sum;
-
     }
 
 }

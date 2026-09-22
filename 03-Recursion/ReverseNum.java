@@ -7,7 +7,10 @@ public class ReverseNum {
         System.out.println(ReverseNum.reverse2(4321));
     }
 
-    // Reverse Number with recursion : Brute-Force Approach
+    // ==============================================================================
+    // 1. Reverse Number with Recursion (Using Global Variable)
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(log10(n)) (Recursive Call Stack)
     static void reverse1(int n) {
         if (n == 0) {
             return;
@@ -17,7 +20,10 @@ public class ReverseNum {
         reverse1(n / 10);
     }
 
-    // Reverse Number with recursion second method :
+    // ==============================================================================
+    // 2. Reverse Number with Recursion (Pure Function with Helper)
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(log10(n)) (Recursive Call Stack)
     static int reverse2(int n) {
         int digits = (int) (Math.log10(n)) + 1;
         return helper(n, digits);
