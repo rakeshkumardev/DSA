@@ -5,7 +5,10 @@ public class BinaryExponentiation {
         System.out.println(BinaryExponentiation.myPowOptRec(2.0, 4));
     }
 
-    // Brute-Force Approach
+    // ==============================================================================
+    // 1. Brute-Force Approach
+    // Time Complexity: O(n)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static double myPow(double x, int n) {
         long power = n;
         if (power < 0) {
@@ -20,7 +23,10 @@ public class BinaryExponentiation {
         return result;
     }
 
-    // Optimal Approach - iterative
+    // ==============================================================================
+    // 2. Optimal Approach - Iterative
+    // Time Complexity: O(log2(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static double myPowOptIter(double x, int n) {
         long power = n;
         if (power < 0) {
@@ -41,7 +47,10 @@ public class BinaryExponentiation {
         return result;
     }
 
-    // Optimal Approach - Recursive
+    // ==============================================================================
+    // 3. Optimal Approach - Recursive (with Helper Function)
+    // Time Complexity: O(log2(n))
+    // Space Complexity: O(log2(n)) (Recursive Call Stack)
     static double myPowOptRec(double x, int n) {
         long power = n;
         if (power < 0) {
@@ -49,7 +58,7 @@ public class BinaryExponentiation {
             power = -power;
         }
 
-        return fastPowerHelper(x, n);
+        return fastPowerHelper(x, power);
     }
 
     static double fastPowerHelper(double x, long n) {

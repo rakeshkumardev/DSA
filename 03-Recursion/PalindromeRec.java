@@ -2,11 +2,16 @@ public class PalindromeRec {
     static int sum = 0;
 
     public static void main(String[] args) {
-        System.out.println(PalindromeCheck.palindromeCheck(12));
-
+        int n = 1221;
+        sum = 0;
+        reverse1(n);
+        System.out.println(palindromeCheck(n));
     }
 
-    // Helper function of the palindrome check
+    // ==============================================================================
+    // Recursive Palindrome Check (with Helper Function)
+    // Time Complexity: O(log10(n))
+    // Space Complexity: O(log10(n)) (Recursive Call Stack)
     static void reverse1(int n) {
         if (n == 0) {
             return;
@@ -16,7 +21,6 @@ public class PalindromeRec {
         reverse1(n / 10);
     }
 
-    // Main Function to Check Palindrome
     static boolean palindromeCheck(int n) {
         return sum == n;
     }

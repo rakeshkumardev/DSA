@@ -1,10 +1,13 @@
 public class Print1ToN {
     public static void main(String[] args) {
-        // Print1ToN.print1ToN(5);
+        Print1ToN.print1ToN(5);
         Print1ToN.print1ToN2(1, 3);
     }
 
-    // Print 1 To N using Backtracking
+    // ==============================================================================
+    // 1. Print 1 To N using Backtracking / Head Recursion
+    // Time Complexity: O(n)
+    // Space Complexity: O(n) (Recursive Call Stack)
     static void print1ToN(int n) {
         if (n == 0) {
             return;
@@ -13,7 +16,10 @@ public class Print1ToN {
         System.out.println(n);
     }
 
-    // Print 1 To N using simple recursion
+    // ==============================================================================
+    // 2. Print 1 To N using Simple Forward Recursion
+    // Time Complexity: O(n)
+    // Space Complexity: O(n) (Recursive Call Stack)
     static void print1ToN2(int i, int n) {
         if (i > n) {
             return;

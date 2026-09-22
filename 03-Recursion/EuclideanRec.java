@@ -3,8 +3,10 @@ public class EuclideanRec {
         System.out.println(EuclideanRec.printGcd(45, 15));
     }
 
-    // find the Greatest common Divisor(GCD) of two numbers using the optimized
-    // recursive Euclidean Algorithm
+    // ==============================================================================
+    // Recursive Euclidean Algorithm for GCD
+    // Time Complexity: O(log(min(a, b)))
+    // Space Complexity: O(log(min(a, b))) (Recursive Call Stack)
     static int printGcd(int a, int b) {
         if (b == 0)
             return a;

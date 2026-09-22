@@ -1,28 +1,29 @@
 public class FactorialRec {
     public static void main(String[] args) {
+        System.out.println(FactorialRec.factorial(5));
         System.out.println(FactorialRec.factorialIter(5));
     }
 
-    // Print Factorial of Number N (Brute-Force Method - because this code will not
-    // be able to run or compute factorial(50) . 50 is not a big number so we use
-    // iterative one )
+    // ==============================================================================
+    // 1. Recursive Approach
+    // Time Complexity: O(n)
+    // Space Complexity: O(n) (Recursive Call Stack)
     static int factorial(int n) {
-        if (n > 2) {
-            return n;
+        if (n <= 1) {
+            return 1;
         }
 
         return n * factorial(n - 1);
     }
 
-    // Print Factorial of Number N (using Iterative method)
-
+    // ==============================================================================
+    // 2. Iterative Approach
+    // Time Complexity: O(n)
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static int factorialIter(int n) {
-        if (n > 2) {
-            return n;
-        }
         int fact = 1;
         for (int i = 1; i <= n; i++) {
-            fact = n * (n - 1);
+            fact = fact * i;
         }
         return fact;
     }

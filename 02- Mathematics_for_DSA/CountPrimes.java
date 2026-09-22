@@ -6,7 +6,10 @@ public class CountPrimes {
         System.out.println(CountPrimes.countPrimesOpt(50));
     }
 
-    // ======================================
+    // ==============================================================================
+    // 1. Brute-Force Approach (Using isPrime Helper)
+    // Time Complexity: O(n * sqrt(n))
+    // Space Complexity: O(1) (Constant Auxiliary Space)
     static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
@@ -30,8 +33,10 @@ public class CountPrimes {
         return count;
     }
 
-    // ===============================
-    // Optimal Approach
+    // ==============================================================================
+    // 2. Optimal Approach (Sieve of Eratosthenes)
+    // Time Complexity: O(n * log(log(n)))
+    // Space Complexity: O(n) (Auxiliary Space for boolean array)
     static int countPrimesOpt(int n) {
         if (n <= 1) {
             return 0;

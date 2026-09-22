@@ -3,7 +3,10 @@ public class FastPowerxn {
         System.out.println(FastPowerxn.myPow(2.0, 4));
     }
 
-    //
+    // ==============================================================================
+    // Fast Power x^n (Recursive with Helper Function)
+    // Time Complexity: O(log2(n))
+    // Space Complexity: O(log2(n)) (Recursive Call Stack)
     static double myPow(double x, int n) {
         long power = n;
 
@@ -13,7 +16,6 @@ public class FastPowerxn {
         }
 
         return fastPowerHelper(x, power);
-
     }
 
     static double fastPowerHelper(double x, long n) {
@@ -25,7 +27,6 @@ public class FastPowerxn {
         } else {
             return x * fastPowerHelper(x * x, n / 2);
         }
-
     }
 
 }
