@@ -1,6 +1,6 @@
-public class PrintBothNTo1 {
+public class PrintBothRev {
     public static void main(String[] args) {
-        PrintBothNTo1.printBothRev(5);
+        PrintBothRev.printBothRev(5);
     }
 
     // ==============================================================================
