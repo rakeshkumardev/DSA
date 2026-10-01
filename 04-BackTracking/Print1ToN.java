@@ -13,5 +13,6 @@ public class Print1ToN {
         }
         print1ToN(n - 1);
         System.out.println(n);
+
     }
 }
